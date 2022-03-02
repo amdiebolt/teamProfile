@@ -137,11 +137,11 @@ function newIntern() {
 }
 function writeToFile() {
   if (!fs.existsSync(DIR)) {
-    fs.mkdirSync(DIR);
+    fs.mkdirSync(DIR)
   }
   fs.writeFile(dist, render(teamArray), function(err, result) {
-    if(err) console.log('error', err);
-  });
+    if(err) console.log('error', err)
+  })
 }
 
 }
